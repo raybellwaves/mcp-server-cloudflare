@@ -26,6 +26,16 @@ The following servers are included in this repository:
 | [**Cloudflare One CASB server**](/apps/cloudflare-one-casb)    | Quickly identify any security misconfigurations for SaaS applications to safeguard users & data | `https://casb.mcp.cloudflare.com/mcp`          |
 | [**GraphQL server**](/apps/graphql/)                           | Get analytics data using Cloudflare’s GraphQL API                                               | `https://graphql.mcp.cloudflare.com/mcp`       |
 
+## Gemini CLI Extension
+
+You can install all Cloudflare MCP servers at once as an extension for the [Gemini CLI](https://geminicli.com).
+
+```bash
+gemini extensions install cloudflare/mcp-server-cloudflare
+```
+
+The extension includes 15 specialized MCP servers and an Agent Skill to help the model navigate Cloudflare services. Authentication is handled automatically via Cloudflare OAuth.
+
 ## Access the remote MCP server from any MCP client
 
 If your MCP client has first class support for remote MCP servers, the client will provide a way to accept the server URL directly within its interface (e.g. [Cloudflare AI Playground](https://playground.ai.cloudflare.com/))
